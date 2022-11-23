@@ -7,17 +7,17 @@ public interface Shape {
      * 
      * Draws the shape.
      */
-    public void draw();
+    public String draw();
     /**
      * 
      * @param points sets the pointso of the shape.
      */
-    public void setPoints(double[] points);
+    public void setPoints(String points);
     /**
      * 
      * @return The set of points that define the shape
      */
-    public double[] getPoints();
+    public String getPoints();
     /**
      * 
      */

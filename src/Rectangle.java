@@ -3,35 +3,50 @@
  * @author <a href="https://github.com/NJValin">Neil Valin</a>-300236063
  */
 public class Rectangle implements Shape {
-    private double[] points;
+    private String points;
     private String colour;
-
-    public Rectangle(double[] points, String colour) {
-        if (points.length!=4) {
-            throw new IllegalArgumentException("A rectangle has 4 points");
-        }
+    /**
+     * 
+     * @param points
+     * @param colour
+     */
+    public Rectangle(String points, String colour) {
         this.points = points;
         this.colour = colour;
     }
-
-    public void draw() {
-
+    /**
+     * 
+     * @return
+     */
+    public String draw() {
+        return "\u2610";
+    }
+    /**
+     * 
+     * @param
+     */
+    public void setPoints(String points) {
+        this.points  = points;
     }
 
-
-    public void setPoints(double[] points) {
-
-
-    }
-
-
-    public double[] getPoints() {
-
+    /**
+     * 
+     * @return
+     */
+    public String getPoints() {
         return this.points;
     }
+    /**
+     * 
+     * @return
+     */
     public String getColour() {
         return this.colour;
     }
+    /**
+     * 
+     * @param colour
+     */
     public void setColour(String colour) {
         this.colour = colour;
     }
