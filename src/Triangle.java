@@ -13,7 +13,7 @@ public class Triangle implements Shape {
     @Override
     public String draw() {
         // TODO Auto-generated method stub
-        return "\u20E4";
+        return "▲";
     }
     
     /**
@@ -27,7 +27,7 @@ public class Triangle implements Shape {
     }
     
     /** 
-     * 
+     *  	
      * @return 
     */
     @Override

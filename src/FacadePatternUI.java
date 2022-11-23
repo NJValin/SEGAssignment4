@@ -3,60 +3,119 @@
  * @author <a href="https://github.com/NJValin">Neil Valin</a>-300236063
  */
 public class FacadePatternUI {
-    private Shape shape;
+    private Circle circle;
+    private Triangle triangle;
+    private Rectangle rectangle;
     /**
      * 
      * @param type
      * @param points
      * @param colour
      */
-    public FacadePatternUI(String type, String points, String colour) {
-        if (type.equalsIgnoreCase("circle")) {
-            shape = new Circle(points, colour);
-        }
-        else if (type.equalsIgnoreCase("triangle")) {
-            shape = new Triangle(points, colour);
-        }
-        else if (type.equalsIgnoreCase("rectangle")) {
-            shape = new Rectangle(points, colour);
-        }
-        else {
-            throw new IllegalArgumentException("the parameter type must be one of the following: rectangle, circle, & triangle");
-        }
+    public FacadePatternUI(String points, String colour) {
+        circle = new Circle(points, colour);
+        triangle = new Triangle(points, colour);
+        rectangle = new Rectangle(points, colour);
+        
     }
     /**
      * 
      * @return
      */
-    public String draw() {
-        return shape.draw();
+    public String drawCircle() {
+        return circle.draw();
+    }
+    /**
+     * 
+     * @return
+     */
+    public String drawRectangle() {
+        return rectangle.draw();
+    }
+    /**
+     * 
+     * @return
+     */
+    public String drawTriangle() {
+        return triangle.draw();
     }
     /**
      * 
      * @param points
      */
-    public void setPoints(String points) {
-        shape.setPoints(points);
+    public void setCirclePoints(String points) {
+        circle.setPoints(points);
+    }
+    /**
+     * 
+     * @param points
+     */
+    public void setRectanglePoints(String points) {
+        rectangle.setPoints(points);
+    }
+    /**
+     * 
+     * @param points
+     */
+    public void setTrianglePoints(String points) {
+        triangle.setPoints(points);
     }
     /**
      * 
      * @return
      */
-    public String getPoints() {return shape.getPoints();}
-
-    /**
-     * 
-     * @param colour
-     */
-    public void setColour(String colour) {shape.setColour(colour);}
+    public String getCirclePoints() {return circle.getPoints();}
 
     /**
      * 
      * @return
      */
-    public String getColour() {return shape.getColour();}
+    public String getRectanglePoints() {return rectangle.getPoints();}
+
+    /**
+     * 
+     * @return
+     */
+    public String getTriangleString() {return triangle.getPoints();}
+
+
+    /**
+     * 
+     * @param colour
+     */
+    public void setCircleColour(String colour) {circle.setColour(colour);}
+
+    /**
+     * 
+     * @param colour
+     */
+    public void setRectangleColour(String colour) {rectangle.setColour(colour);}
+
+    /**
+     * 
+     * @param colour
+     */
+    public void setTriangleColour(String colour) {triangle.setColour(colour);}
+    /**
+     * 
+     * @return
+     */
+    public String getCircleColour() {return circle.getColour();}
+
+    /**
+     * 
+     * @return
+     */
+    public String getRectangleColour() {return rectangle.getColour();}
+
+    /**
+     * 
+     * @return
+     */
+    public String getTriangleColour() {return triangle.getColour();}
     
     public static void main(String[] args) {
-        
+        FacadePatternUI x = new FacadePatternUI("(2,3)", "red");
+        System.out.println(x.drawCircle());
     }
 }

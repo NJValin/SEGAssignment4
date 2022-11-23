@@ -19,31 +19,26 @@ public class Circle implements Shape {
     }
     @Override
     public String draw() {
-        // TODO Auto-generated method stub
-        return "\u25EF";
+        return "◯";
     }
 
     @Override
     public void setPoints(String points) {
-        // TODO Auto-generated method stub
         this.points = points;
     }
 
     @Override
     public String getPoints() {
-        // TODO Auto-generated method stub
         return points;
     }
 
     @Override
     public void setColour(String colour) {
-        // TODO Auto-generated method stu
         this.colour= colour;
     }
 
     @Override
     public String getColour() {
-        // TODO Auto-generated method stub
         return this.colour;
     }
     

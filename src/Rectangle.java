@@ -19,7 +19,7 @@ public class Rectangle implements Shape {
      * @return
      */
     public String draw() {
-        return "\u2610";
+        return "☐";
     }
     /**
      * 
