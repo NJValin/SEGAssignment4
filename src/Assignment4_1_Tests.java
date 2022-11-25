@@ -1,6 +1,17 @@
-package Part1;
+
 import org.junit.Test;
 import org.junit.rules.Timeout;
+
+import Part1.CriteriaFemale;
+import Part1.CriteriaMale;
+import Part1.FacadePatternUI;
+import Part1.FactoryPatternUI;
+import Part1.FilterPattern;
+import Part1.Person;
+import Part1.PersonStates;
+import Part1.Shape;
+import Part1.SingleTonPattern;
+
 import org.junit.Rule;
 
 import static org.junit.Assert.*;

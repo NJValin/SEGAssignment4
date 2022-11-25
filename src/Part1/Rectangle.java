@@ -26,7 +26,7 @@ public class Rectangle implements Shape {
      * @see Part1.Shape#draw()
      */
     public String draw() {
-        return "☐";
+        return "\u2610";
     }
     /**
      * A setter method for points

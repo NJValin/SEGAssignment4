@@ -15,7 +15,7 @@ public interface Shape {
     public String draw();
     /**
      * A setter method that sets the points of interest of the shape.
-     * @param points sets the pointso of the shape.
+     * @param points - sets the points of the shape.
      * @since 1.0
      */
     public void setPoints(String points);

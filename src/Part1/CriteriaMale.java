@@ -14,6 +14,7 @@ public class CriteriaMale implements Criteria{
      * @param people a list of people to be filtered
      * @return The list of all men in <b>people</b>
      * @since 1.0
+     * @see Part1.Criteria#meetCriteria(java.util.List)
      */
     @Override
     public List<Person> meetCriteria(List<Person> people) {
